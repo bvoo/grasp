@@ -1,0 +1,45 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-gap: 1rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+.addButton {
+    display: flex;
+    justify-content: center;
+    width: 175px;
+    height: 38px;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    background: #b8ed61;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+}
+
+.noteContainer {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(30%, 800px));
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.noteContent {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    margin: auto;
+    border-radius: var(--border-radius);
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+}
